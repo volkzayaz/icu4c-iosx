@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
     s.ios.pod_target_xcconfig = { 'ONLY_ACTIVE_ARCH' => 'YES' }
     s.static_framework = true
     s.prepare_command = "sh scripts/build.sh"
-    s.source       = { :git => "https://github.com/apotocki/icu4c-iosx.git", :tag => "#{s.version}", :submodules => "true" }
+    s.source       = { :git => "https://github.com/volkzayaz/icu4c-iosx.git", :branch => "master", :submodules => "true" }
     s.source_files = "product/include/**/*.{h}"
     s.header_mappings_dir = "product/include"
     s.public_header_files = "product/include/**/*.{h}"
